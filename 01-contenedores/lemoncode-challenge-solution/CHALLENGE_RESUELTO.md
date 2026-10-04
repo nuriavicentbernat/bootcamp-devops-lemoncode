@@ -37,8 +37,6 @@ docker run -d --name backend_challenge --network=lemoncode-challenge \
   node:22 sh -c "npm install && npm start"
 ```
 
-(Nota para mí misma: en Windows con Git Bash, las rutas tipo `/home/node/app` a veces se traducen mal — si da error de "working directory invalid", hay que anteponer `MSYS_NO_PATHCONV=1` al comando).
-
 Las variables de entorno del backend van en `backend/.env` (no se sube al repo):
 
 ```ini
