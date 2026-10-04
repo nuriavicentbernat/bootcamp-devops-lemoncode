@@ -1,0 +1,27 @@
+// For format details, see https://aka.ms/devcontainer.json
+{
+	"name": "🍋 Lemoncode Challenge - Node Stack",
+	"image": "mcr.microsoft.com/devcontainers/javascript-node:1-22-bullseye",
+
+	// Docker-in-Docker: nos da un daemon Docker propio dentro del devcontainer,
+	// para poder hacer "docker network create", "docker run", "docker build"
+	// y "docker compose" sin tocar el Docker de Windows.
+	"features": {
+		"ghcr.io/devcontainers/features/docker-in-docker:2": {}
+	},
+
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"humao.rest-client",
+				"mongodb.mongodb-vscode",
+				"dbaeumer.vscode-eslint"
+			]
+		}
+	},
+
+	// Puertos de los 4 retos: 3000 frontend, 5000 backend API, 27017 MongoDB.
+	"forwardPorts": [3000, 5000, 27017],
+
+	"remoteUser": "node"
+}

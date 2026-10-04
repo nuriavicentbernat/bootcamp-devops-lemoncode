@@ -1,0 +1,32 @@
+{
+  "name": "lemoncode-frontend",
+  "version": "1.0.0",
+  "description": "Frontend application for Lemoncode challenge - Node stack",
+  "main": "server.js",
+  "engines": {
+    "node": "18.x || 20.x || 22.x"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "keywords": [
+    "express",
+    "frontend",
+    "lemoncode",
+    "nodejs"
+  ],
+  "author": "Lemoncode",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
